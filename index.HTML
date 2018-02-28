@@ -1,10 +1,89 @@
+<!-- Creator Sanjay Soni
+	follow me -
+	          facebook.com/imsanjaysoni
+	          github.com/imsanjaysoni
+	          twitter.com/imsanjaysoni
+-->
+
+
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-	<title>hello world </title>
+	<title>
+		 JS Calculator
+	</title>
+	<link rel="shortcut icon" href="favicon.ico"> <link rel="apple-touch-icon" sizes="57x57" href="apple-touch-icon-57x57.png"> 
+	  <meta charset="utf-8">
+	  <!--google font & ionic iconpacs CND -->
+
+	<link rel="stylesheet" type="text/css" href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+	<link href="https://fonts.googleapis.com/css?family=Supermercado+One|Ubuntu" rel="stylesheet">
+
+	<link rel="stylesheet" type="text/css" href="style.css"> 
+
+
+<script type="text/javascript" src="script.js"  src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js">
+	
+</script>
+
 </head>
-<body style="background: #333; color: #fff; ">
-<h1 style="color: #fff; text-align: center; font-family: sans-serif; font-size: 25px; word-spacing: .5em;" >{"Hello World"}</H1>
+
+<body>
+	
+	
+
+ <!--Social link buttons-->
+
+	<a href="http://www.gitHub.com/imsanjaysoni"><button class="ion" style="position: fixed; float: right;  height: 50px;
+	 	width: 50px; background-color: #00c853; border-radius: 50%;" ><alert="gitHub" class=" ion-social-github" style="background-color:#00c853" /></button></a><br>
+
+     <a href="http://www.facebook.com/imsanjaysoni">   <button class="ion" style="position: fixed; float: right; height: 50px;
+	 	width: 50px; background-color: #1a237e; border-radius: 50%; margin-top: 50px;" ><alert="gitHub" class=" ion-social-facebook" style="background-color:#1a237e;" /></button></a>
+
+	 		
+	 		  <!--Calculator body-->
+
+	<div class="calculator">
+		<input type="text"  class="viewer" id="screen" placeholder="0" style="border:none;   border-radius:5px; font-size: 40px; width:260px; background-color: #ccff90;
+ "></input><br>
+ 
+
+		<button class="option" onclick="onOff()" style="font-size: 16px; width: 60px; height: 26px; background-color: #d32f2f; color: #fff; border-radius: 8px; "  onclick="off()" >Off</button> 
+
+		<button class="option" onclick="clearAll()" style="font-size: 16px; width: 60px; height: 26px;  background-color:#00c853; color: #fff; border-radius: 8px; " >Clear</button>
+
+		<button class="option" onclick="deleteLastNum()" style="font-size: 16px; width: 60px; height: 26px; font-style:bold; background-color:#fdd835; color: #fff; border-radius: 8px; margin-right: 20px;" >&#8592;</button> 
+
+
+		<button value="7"  onclick="getNumber(7)">7</button>
+		<button value="8" onclick="getNumber(8)">8</button>
+		<button value="9" onclick="getNumber(9)">9</button>
+		<button value="plus" class="oprator" onclick="getOparator('plus')">+</button><br>
+
+		<button value="4" onclick="getNumber(4)">4</button>
+
+		<button value="5" onclick="getNumber(5)">5</button>
+		<button value="6" onclick="getNumber(6)">6</button>
+		<button value="minus" class="oprator" onclick="getOparator('minus')">&#x2212;</button><br>
+
+		<button value="1" onclick="getNumber(1)">1</button>
+		<button value="2" onclick="getNumber(2)">2</button>
+		<button value="3" onclick="getNumber(3)">3</button>
+		<button value="multiply" class="oprator" onclick="getOparator('multiply')"> &#x00D7;</button>
+		<button value="dot" onclick="getNumber('dot')">.</button>
+		<button value="0" onclick="getNumber(0)">0</button>
+		<button value="plusminus" onclick="getOparator('plusminus')">&#x00B1;</button>
+		<button value="division" class="oprator" onclick="getOparator('division')">&#247;</button>
+
+
+	    <button class="equal" style="width: 67%" onclick="calculate()">=</button>
+		<button class="oprator" onclick="setBracket()">&#40; &#41;</button><br>
+
+		
+	</div>
+		<h6 class="footer" style="color: #9e9e9e; margin-top:400px; position: fixed;">made with &#10084; by Sanjay Soni</h6>
+
+
+		
 </body>
 </html>
-
